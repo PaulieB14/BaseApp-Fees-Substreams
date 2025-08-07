@@ -21,7 +21,7 @@ modules:
       type: proto:google.protobuf.Any
 
 networks:
-  - name: base-mainnet
+  base-mainnet:
     chainId: 8453
     endpoints:
       - https://base-mainnet.streamingfast.io:443
