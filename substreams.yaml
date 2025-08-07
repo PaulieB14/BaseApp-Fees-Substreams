@@ -19,3 +19,9 @@ modules:
       - source: sf.ethereum.type.v2.Block
     output:
       type: proto:google.protobuf.Any
+
+networks:
+  - name: base-mainnet
+    chainId: 8453
+    endpoints:
+      - https://base-mainnet.streamingfast.io:443
