@@ -2,6 +2,7 @@ specVersion: v0.1.0
 package:
   name: base_fees
   version: v1.0.0
+  image: ./base.png
 
 binaries:
   default:
