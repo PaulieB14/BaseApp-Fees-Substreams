@@ -26,7 +26,7 @@ A high-performance Substreams project for tracking fee events from multiple paym
 # Stream with GUI
 substreams gui baseapp_fees@v1.0.1
 
-# Run from command line
+# Run from command line (Base mainnet)
 substreams run -e base-mainnet.streamingfast.io:443 baseapp_fees@v1.0.1 map_fee_events --start-block 31229579 --stop-block +1
 ```
 
@@ -62,12 +62,16 @@ This Substreams is optimized for high-throughput fee tracking with:
 
 ## Registry
 
-Published to Substreams Registry: https://substreams.dev/packages/baseapp_fees/v1.0.1
+Published to Substreams Registry: https://substreams.dev/packages/baseapp-fees/v1.0.1
 
 ## Why BaseApp Fees?
 
 BaseApp Fees is specifically designed for Base network fee monitoring with:
-- **Base Network Optimization**: Tailored for Base's specific requirements
+- **Base Network Optimization**: Tailored for Base's specific requirements (Chain ID: 8453)
 - **Paymaster Focus**: Specialized for paymaster contract monitoring
 - **Real-time Analytics**: Perfect for fee tracking dashboards and alerts
 - **Production Deployment**: Ready for enterprise fee monitoring solutions
+
+## Network Configuration
+
+This Substreams is configured for **Base mainnet** (Chain ID: 8453) and uses the StreamingFast endpoint for optimal performance.
