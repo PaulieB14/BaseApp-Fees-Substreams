@@ -1,0 +1,29 @@
+[package]
+name = "base_fees"
+version = "0.1.0"
+description = "Base fees tracking Substreams"
+edition = "2021"
+
+[lib]
+name = "substreams"
+crate-type = ["cdylib"]
+
+[dependencies]
+ethabi = "17"
+hex-literal = "0.3.4"
+hex = "0.4"
+prost = "0.11"
+substreams = "0.5"
+substreams-ethereum = "0.9"
+
+[target.wasm32-unknown-unknown.dependencies]
+getrandom = { version = "0.2", features = ["custom"] }
+
+[build-dependencies]
+anyhow = "1"
+substreams-ethereum = "0.8"
+
+[profile.release]
+lto = true
+opt-level = 's'
+strip = "debuginfo"

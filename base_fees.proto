@@ -1,0 +1,48 @@
+syntax = "proto3";
+
+package base_fees;
+
+message FeeEvents {
+  repeated FeeCollection fee_collections = 1;
+  repeated FeeDistribution fee_distributions = 2;
+  repeated FeeUpdate fee_updates = 3;
+  repeated OwnershipTransfer ownership_transfers = 4;
+}
+
+message FeeCollection {
+  string contract_address = 1;
+  string user = 2;
+  string fee_amount = 3;
+  string token_amount = 4;
+  string block_number = 5;
+  string transaction_hash = 6;
+  string log_index = 7;
+}
+
+message FeeDistribution {
+  string contract_address = 1;
+  string recipient = 2;
+  string fee_amount = 3;
+  string token_amount = 4;
+  string block_number = 5;
+  string transaction_hash = 6;
+  string log_index = 7;
+}
+
+message FeeUpdate {
+  string contract_address = 1;
+  string old_fee = 2;
+  string new_fee = 3;
+  string block_number = 4;
+  string transaction_hash = 5;
+  string log_index = 6;
+}
+
+message OwnershipTransfer {
+  string contract_address = 1;
+  string previous_owner = 2;
+  string new_owner = 3;
+  string block_number = 4;
+  string transaction_hash = 5;
+  string log_index = 6;
+}
