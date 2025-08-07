@@ -1,7 +1,7 @@
 [package]
 name = "baseapp_fees"
-version = "0.1.1"
-description = "BaseApp Fees - Real-time fee tracking for Base network paymaster contracts"
+version = "0.1.2"
+description = "BaseApp Fees - Optimized real-time fee tracking for Base network paymaster contracts"
 edition = "2021"
 
 [lib]

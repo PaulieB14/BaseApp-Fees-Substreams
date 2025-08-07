@@ -1,8 +1,8 @@
 specVersion: v0.1.0
 package:
   name: baseapp_fees
-  version: v1.0.1
-  description: "BaseApp Fees - Real-time fee tracking for Base network paymaster contracts"
+  version: v1.0.2
+  description: "BaseApp Fees - Optimized real-time fee tracking for Base network paymaster contracts"
   url: "https://github.com/PaulieB14/BaseApp-Fees-Substreams"
   image: ./base.png
 
